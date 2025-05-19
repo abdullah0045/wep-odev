@@ -6,72 +6,70 @@
   <title>Hoş Geldiniz - Abdullah</title>
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
   <link href="css/style.css" rel="stylesheet">
+  <style>
+    body {
+      background: linear-gradient(to right, #f6e0ff, #f1fff7);
+      font-family: 'Segoe UI', sans-serif;
+    }
+
+    .hero {
+      padding: 80px 20px;
+      background-image: url('images/bg-welcome.jpg'); /* صورة خلفية اختيارية */
+      background-size: cover;
+      background-position: center;
+      color: #ffffff;
+      text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.436);
+      border-radius: 12px;
+    }
+
+    .hero h1 {
+      font-size: 3.5rem;
+      font-weight: 800;
+    }
+ .hero p {
+    color: #fd0d51; /* أو استبدله باللون الثاني */
+  }
+    .hero p {
+      font-size: 1.3rem;
+      margin-bottom: 30px;
+    }
+  </style>
 </head>
 <body>
 
-  <!-- Navbar -->
-  <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
-    <div class="container-fluid">
-      <a class="navbar-brand" href="index.html">Abdullah'ın Web Sitesi</a>
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse" id="navbarNav">
-        <ul class="navbar-nav ms-auto">
-          <li class="nav-item"><a class="nav-link active" href="index.html">Ana Sayfa</a></li>
-          <li class="nav-item"><a class="nav-link" href="cv.html">Özgeçmiş</a></li>
-          <li class="nav-item"><a class="nav-link" href="shir.html">Şehrim</a></li>
-          <li class="nav-item"><a class="nav-link" href="iletisim.html">İletişim</a></li>
-        </ul>
-      </div>
+<!-- 🔵 Navbar -->
+<nav class="navbar navbar-expand-lg navbar-dark bg-primary py-2">
+  <div class="container-fluid px-4 d-flex align-items-center">
+    <img src="images/abdullah.png" alt="Profil" class="rounded-circle me-2" width="45" height="45">
+    <a class="navbar-brand fw-bold me-auto" href="#">Abdullah'ın Web Sitesi</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav ms-auto">
+        <li class="nav-item"><a class="nav-link active" href="index.html">Ana Sayfa</a></li>
+        <li class="nav-item"><a class="nav-link" href="hakkimda.html">Hakkımda</a></li>
+        <li class="nav-item"><a class="nav-link" href="ozgecmis.html">Özgeçmiş</a></li>
+        <li class="nav-item"><a class="nav-link" href="sehrim.html">Şehrim</a></li>
+        <li class="nav-item"><a class="nav-link" href="mirasimiz.html">Mirasımız</a></li>
+        <li class="nav-item"><a class="nav-link" href="ilgialanlarim.html">İlgi Alanlarım</a></li>
+        <li class="nav-item"><a class="nav-link" href="iletisim.html">İletişim</a></li>
+        <li class="nav-item"><a class="nav-link" href="login.html">Giriş</a></li>
+      </ul>
     </div>
-  </nav>
-
-  <!-- İçerik -->
-  <div class="container mt-5 mb-5">
-
-    <!-- Giriş -->
-    <h1 class="text-center display-5">Merhaba, Ben Abdullah Abuşar</h1>
-    <p class="lead text-center mb-4">
-      23 yaşındayım. Suriye Halep doğumluyum. Gaziantep'te yaşıyorum ve Sakarya Üniversitesi'nde Bilgisayar Mühendisliği okuyorum.
-    </p>
-
-    <!-- Hobiler -->
-    <h3 class="mt-4">Hobilerim</h3>
-    <ul>
-      <li>Yüzme</li>
-      <li>Futbol</li>
-      <li>Koşu</li>
-      <li>Kitap Okuma</li>
-    </ul>
-
-    <!-- Etkinlik Görselleri -->
-    <h3 class="mt-5">Sevdiğim Etkinliklerden Görseller</h3>
-    <div class="row">
-      <div class="col-6 col-md-3 mb-3">
-        <img src="images/yuzme.png" class="uniform-img" alt="Yüzme">
-      </div>
-      <div class="col-6 col-md-3 mb-3">
-        <img src="images/futbol.png" class="uniform-img" alt="Futbol">
-      </div>
-      <div class="col-6 col-md-3 mb-3">
-        <img src="images/kosu.png" class="uniform-img" alt="Koşu">
-      </div>
-      <div class="col-6 col-md-3 mb-3">
-        <img src="images/kitap.png" class="uniform-img" alt="Kitap">
-      </div>
-    </div>
-
-    <!-- Sosyal Medya -->
-    <h3 class="mt-4">Beni Takip Et</h3>
-    <ul>
-      <li><a href="https://github.com/abdullah" target="_blank">GitHub</a></li>
-      <li><a href="https://www.instagram.com/abdullah" target="_blank">Instagram</a></li>
-      <li><a href="https://www.linkedin.com/in/abdullah" target="_blank">LinkedIn</a></li>
-    </ul>
-
   </div>
-<!-- Sosya------------
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</nav>
+
+<!-- 🎉 Welcome Section -->
+<div class="container mt-5">
+  <div class="hero text-center">
+    <h1>Hoş Geldiniz!</h1>
+    <p>Kişisel web siteme hoş geldiniz. Yukarıdaki menüyü kullanarak sayfaları inceleyebilirsiniz.</p>
+    <a href="hakkimda.html" class="btn btn-light btn-lg px-4">Hakkımda Sayfasına Git</a>
+  </div>
+</div>
+
+<!-- Bootstrap JS -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
