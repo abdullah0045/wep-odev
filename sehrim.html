@@ -1,41 +1,77 @@
 <!DOCTYPE html>
 <html lang="tr">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Şehrim - Halep</title>
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" rel="stylesheet" />
   <style>
     body {
-      background: linear-gradient(to right, #eef2ff, #dff1ff);
+      background: linear-gradient(to right, #eef2ff, #e9f7f9);
       font-family: 'Segoe UI', sans-serif;
     }
-    .section {
-      background-color: #ffffff;
-      border-radius: 15px;
-      padding: 25px;
-      box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1);
-      margin-bottom: 20px;
-      transition: transform 0.2s;
+
+    .navbar {
+      box-shadow: 0 3px 6px rgba(0, 0, 0, 0.1);
     }
-    .section:hover {
-      transform: translateY(-5px);
+
+    .section-title {
+      text-align: center;
+      margin: 40px 0 30px;
+      font-size: 2.2rem;
+      font-weight: bold;
+      color: #0d6efd;
     }
-    .main-title {
-      text-shadow: 1px 1px 3px rgba(0,0,0,0.2);
+
+    .city-card {
+      background: #ffffff;
+      border-radius: 16px;
+      box-shadow: 0 4px 20px rgba(0,0,0,0.07);
+      overflow: hidden;
+      margin-bottom: 40px;
     }
-    .image-box-full {
+
+    .city-card img {
       width: 100%;
-      border-radius: 12px;
-      box-shadow: 0 5px 20px rgba(0,0,0,0.15);
-      margin-bottom: 30px;
+      height: 450px;
+      object-fit: cover;
+    }
+
+    .city-card .content {
+      padding: 30px;
+    }
+
+    .city-card h3 {
+      color: #0d6efd;
+      font-weight: bold;
+      margin-bottom: 15px;
+    }
+
+    .city-card h3 i {
+      margin-right: 10px;
+    }
+
+    .city-card p {
+      font-size: 1.1rem;
+      color: #333;
+      line-height: 1.7;
+    }
+
+    iframe {
+      border-radius: 10px;
+    }
+
+    @media (max-width: 768px) {
+      .city-card img {
+        height: 250px;
+      }
     }
   </style>
 </head>
 <body>
 
-<!-- 🔷 Navbar -->
+<!-- ✅ Navbar -->
 <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
   <div class="container-fluid px-4">
     <img src="images/abdullah.png" alt="Profil" class="rounded-circle me-2" width="45" height="45">
@@ -58,72 +94,72 @@
   </div>
 </nav>
 
-<!-- 🏙️ Başlık ve Resim -->
-<div class="container mt-5 text-center">
-  <h1 class="display-4 fw-bold text-primary main-title">Şehrim - Halep</h1>
-  <p class="text-muted mb-4">Tarihi, kültürü ve güzellikleriyle Halep</p>
-  <img src="images/halep-kalesi.jpg" alt="Halep Kalesi" class="image-box-full">
-</div>
+<!-- ✅ İçerik -->
+<div class="container mt-5">
+  <h2 class="section-title">Şehrim: Halep</h2>
 
-<!-- 📝 Bilgiler -->
-<div class="container">
-
-  <!-- Halep Hakkında -->
-  <div class="section">
-    <h4><i class="bi bi-geo-alt-fill text-danger"></i> Halep Hakkında</h4>
-    <p>
-      Halep, Suriye'nin kuzeybatısında yer alan ve insanlık tarihinin en eski yerleşim yerlerinden biri olarak kabul edilen kadim bir şehirdir.
-      Arkeolojik kazılara göre geçmişi M.Ö. 5000'li yıllara kadar uzanmaktadır. İpek Yolu üzerinde stratejik bir noktada yer alan Halep,
-      yüzyıllar boyunca Doğu ile Batı arasında ticaretin ve kültürel etkileşimin merkezi olmuştur.
-    </p>
-    <p>
-      Hititler, Aramiler, Persler, Romalılar, Bizanslılar ve özellikle Emevîler, Abbasîler ve Osmanlılar gibi büyük uygarlıklar bu şehirde iz bırakmıştır.
-      Osmanlı döneminde Halep, Şam'dan sonra Suriye eyaletinin en önemli merkezi olmuş, ticari ve kültürel olarak büyük gelişme göstermiştir.
-    </p>
-    <p>
-      Şehir mimarisiyle dikkat çeker; dar sokakları, taş evleri, geleneksel çarşıları ve hanlarıyla Orta Doğu'nun en karakteristik kentlerinden biridir.
-      Ayrıca çok kültürlü yapısıyla Müslüman, Hristiyan ve Yahudi toplulukların yüzyıllar boyunca birlikte yaşadığı bir şehir olmuştur.
-    </p>
-    <p>
-      Son yıllarda yaşanan çatışmalar nedeniyle ağır tahribata uğramış olsa da, Halep'in tarihi dokusu ve ruhu yaşamaya devam etmektedir.
-      UNESCO Dünya Mirası listesindeki yapıları ve köklü geçmişiyle Halep, sadece Suriye'nin değil, tüm insanlığın ortak mirasıdır.
-    </p>
+  <!-- Halep Kalesi -->
+  <div class="city-card">
+    <img src="images/halep-kalesi.jpg" alt="Halep Kalesi">
+    <div class="content">
+      <h3><i class="bi bi-castle"></i> Halep Kalesi</h3>
+      <p>
+        Halep’in merkezinde bulunan bu görkemli kale, insanlık tarihinin en eski ve en önemli yapılarından biridir.
+        Binlerce yıl boyunca birçok medeniyetin stratejik karargâhı olmuş; Bizans, Emevi, Selçuklu ve Osmanlı dönemlerinde askeri ve yönetsel merkez olarak kullanılmıştır.
+        Bugün ayakta kalan sağlam surları ve mimari detaylarıyla, ziyaretçilerine tarihle iç içe olma deneyimi yaşatır.
+      </p>
+    </div>
   </div>
 
-  <!-- Tarihi Yerler -->
-  <div class="section">
-    <h4><i class="bi bi-bank text-primary"></i> Tarihi ve Kültürel Yerler</h4>
-    <ul>
-      <li><strong>Halep Kalesi:</strong> Şehrin ortasında bulunan, binlerce yıllık geçmişe sahip etkileyici kale.</li>
-      <li><strong>Kapalı Çarşı:</strong> Orta Doğu’nun en eski ve en büyük kapalı çarşılarından biri.</li>
-      <li><strong>Ulu Cami:</strong> 8. yüzyılda inşa edilmiş, önemli tarihi cami.</li>
-      <li><strong>Hamamlar ve Hanlar:</strong> Osmanlı döneminden kalma yapılar; sosyal ve ticari hayatın merkezleri.</li>
-    </ul>
+  <!-- Kapalı Çarşı -->
+  <div class="city-card">
+    <img src="images/kapali-carsi.jpg" alt="Kapalı Çarşı">
+    <div class="content">
+      <h3><i class="bi bi-bag-check-fill"></i> Kapalı Çarşı</h3>
+      <p>
+        Halep’in ekonomik kalbi olan bu çarşı, Orta Doğu’nun en eski ve en büyük ticaret merkezlerinden biridir.
+        Baharat kokuları, geleneksel kumaşlar ve bakır işlemeciliğiyle ünlü olan bu alan, Halep’in kültürel zenginliğini yansıtır.
+        Yüzlerce yıllık taş kemerli sokaklarında yürürken zamanda yolculuğa çıkarsınız.
+      </p>
+    </div>
   </div>
 
-  <!-- Meşhur Yemekler -->
-  <div class="section">
-    <h4><i class="bi bi-cup-straw text-warning"></i> Meşhur Yemekler</h4>
-    <ul>
-      <li>Kebap, Şiş Tavuk, Halep Kebabı</li>
-      <li>Fıstıklı Tatlılar: Bakkava, Halep Tatlısı</li>
-      <li>Humus, Falafel, Zeytin ve Zeytinyağlılar</li>
-    </ul>
+  <!-- Ulu Cami -->
+  <div class="city-card">
+    <img src="images/halep-ulucami.jpg" alt="Halep Ulu Cami">
+    <div class="content">
+      <h3><i class="bi bi-moon-stars-fill"></i> Halep Ulu Cami</h3>
+      <p>
+        8. yüzyılda inşa edilen bu cami, Halep’in dini yaşamında büyük öneme sahiptir.
+        Avlusu, zarif taş işçiliği ve minaresiyle İslam mimarisinin güzelliğini sunar.
+        Tarih boyunca birçok kez restore edilerek ayakta kalmayı başarmıştır.
+      </p>
+    </div>
+  </div>
+
+  <!-- Manzara -->
+  <div class="city-card">
+    <img src="images/halep-manzara.jpg" alt="Halep Manzarası">
+    <div class="content">
+      <h3><i class="bi bi-camera-fill"></i> Halep Manzarası</h3>
+      <p>
+        Halep’in sokakları ve taş yapıları, özellikle gün batımında etkileyici manzaralar sunar.
+        Fotoğrafçılar için ideal bir şehir olan Halep, geçmişin dokusunu bugüne taşıyan nadir yerlerden biridir.
+      </p>
+    </div>
   </div>
 
   <!-- Harita -->
-  <div class="section">
-    <h4><i class="bi bi-map text-success"></i> Haritada Halep</h4>
-    <iframe src="https://www.google.com/maps?q=Aleppo,+Syria&output=embed" width="100%" height="300" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+  <div class="city-card">
+    <div class="content">
+      <h3><i class="bi bi-geo-alt-fill"></i> Haritada Halep</h3>
+      <iframe src="https://www.google.com/maps?q=Aleppo,+Syria&output=embed" width="100%" height="300" loading="lazy"></iframe>
+    </div>
   </div>
 
-  <!-- Not -->
-  <div class="text-center mt-4">
-    <p class="fw-bold text-secondary">Halep sadece bir şehir değil, medeniyetlerin buluştuğu yaşayan bir tarihtir. ❤️</p>
-  </div>
 </div>
 
-<!-- JS -->
+<!-- Bootstrap JS -->
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
