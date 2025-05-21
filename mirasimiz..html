@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Mirasımız</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" />
+  <style>
+    body {
+      background: #f3f6fb;
+      font-family: 'Segoe UI', sans-serif;
+    }
+    .section-title {
+      text-align: center;
+      margin: 40px 0;
+      font-size: 2.2rem;
+      font-weight: bold;
+      color: #0d6efd;
+    }
+    .heritage-card {
+      background: white;
+      border-radius: 12px;
+      box-shadow: 0 4px 15px rgba(0,0,0,0.08);
+      overflow: hidden;
+      margin-bottom: 30px;
+      transition: transform 0.3s ease;
+    }
+    .heritage-card:hover {
+      transform: translateY(-5px);
+    }
+    .heritage-card img {
+      width: 100%;
+      height: 240px;
+      object-fit: cover;
+    }
+    .heritage-card .card-body {
+      padding: 20px;
+    }
+    .heritage-card h5 {
+      color: #0d6efd;
+      font-weight: bold;
+    }
+    .heritage-card p {
+      font-size: 1rem;
+      color: #333;
+    }
+
+    /* زر الرجوع للأعلى */
+    #scrollTopBtn {
+      position: fixed;
+      bottom: 30px;
+      right: 30px;
+      display: none;
+      z-index: 999;
+      background-color: #0d6efd;
+      color: white;
+      border: none;
+      border-radius: 50%;
+      width: 48px;
+      height: 48px;
+      font-size: 22px;
+      cursor: pointer;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+      transition: background-color 0.3s ease;
+    }
+    #scrollTopBtn:hover {
+      background-color: #0b5ed7;
+    }
+  </style>
+</head>
+<body>
+
+<!-- ✅ Navbar -->
+<nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+  <div class="container-fluid px-4">
+    <img src="images/abdullah.png" alt="Profil" class="rounded-circle me-2" width="45" height="45">
+    <a class="navbar-brand fw-bold" href="index.html">Abdullah'ın Web Sitesi</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+      <ul class="navbar-nav">
+        <li class="nav-item"><a class="nav-link" href="index.html">Ana Sayfa</a></li>
+        <li class="nav-item"><a class="nav-link" href="hakkimda.html">Hakkımda</a></li>
+        <li class="nav-item"><a class="nav-link" href="ozgecmis.html">Özgeçmiş</a></li>
+        <li class="nav-item"><a class="nav-link" href="sehrim.html">Şehrim</a></li>
+        <li class="nav-item"><a class="nav-link active" href="mirasimiz.html">Mirasımız</a></li>
+        <li class="nav-item"><a class="nav-link" href="ilgialanlarim.html">İlgi Alanlarım</a></li>
+        <li class="nav-item"><a class="nav-link" href="iletisim.html">İletişim</a></li>
+        <li class="nav-item"><a class="nav-link" href="login.html">Giriş</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<!-- ✅ Başlık -->
+<div class="container">
+  <h2 class="section-title">Kültürel Mirasımız</h2>
+  <p class="text-center mb-5">
+    Halep ve Şam'ın tarih boyunca şekillendirdiği mimari, yemek ve zanaat kültürü; bize eşsiz bir miras bırakmıştır.
+  </p>
+
+  <!-- ✅ İçerik Grid -->
+  <div class="row row-cols-1 row-cols-md-2 g-4">
+
+    <!-- Halep Kalesi -->
+    <div class="col">
+      <div class="heritage-card">
+        <img src="images/halep-kalesi.jpg" alt="Halep Kalesi">
+        <div class="card-body">
+          <h5>🏰 Halep Kalesi</h5>
+          <p>Orta Doğu'nun en eski ve en görkemli kalelerinden biri olan Halep Kalesi, antik çağlardan Osmanlı dönemine kadar birçok medeniyete ev sahipliği yapmıştır. Şehrin sembolü olan bu yapı, mimarisi ve tarihi ile kültürel mirasın önemli bir parçasıdır.</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Sabun -->
+    <div class="col">
+      <div class="heritage-card">
+        <img src="images/sabun.jpg" alt="Halep Sabunu">
+        <div class="card-body">
+          <h5>🧼 Halep Sabunu</h5>
+          <p>Zeytinyağı ve defne yağı ile yapılan geleneksel Halep sabunu, yüzyıllardır doğal temizlik ürünü olarak kullanılıyor. Katkı maddesi içermemesiyle dünyaca ünlü hale gelmiştir ve Halep’in el sanatlarının önemli bir örneğidir.</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Zaatar -->
+    <div class="col">
+      <div class="heritage-card">
+        <img src="images/zaatar.jpg" alt="Halep Zaatarı">
+        <div class="card-body">
+          <h5>🌿 Halep Zaatarı</h5>
+          <p>Halep'te üretilen baharat karışımı olan zaatar (zahter), kahvaltılarda ve yemeklerde sıkça kullanılır. Zeytinyağı ile birlikte tüketilen bu geleneksel tat, hem lezzetiyle hem de sağlık faydalarıyla bilinmektedir.</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Lahmeh Bi Kiraz -->
+    <div class="col">
+      <div class="heritage-card">
+        <img src="images/keraz.jpg" alt="Lahmeh Bi Kiraz">
+        <div class="card-body">
+          <h5>🍒 Lâhme Bi Kiraz</h5>
+          <p>Kiraz ve kıymanın mükemmel uyumuyla hazırlanan bu eşsiz Şam yemeği, hem ekşi hem tatlı tadıyla damağa unutulmaz bir deneyim sunar. Genellikle özel günlerde yapılan bu yemek, geleneksel Suriye mutfağının incilerindendir.</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Halep Ulu Cami -->
+<div class="col">
+  <div class="heritage-card">
+    <img src="images/halep-ulucami.jpg" alt="Halep Ulu Cami">
+    <div class="card-body">
+      <h5>🕌 Halep Ulu Camii</h5>
+      <p>8. yüzyılda inşa edilen bu cami, Halep’in en eski ve en önemli dini yapılarındandır. Selçuklu ve Osmanlı dönemlerinde çeşitli restorasyonlar geçirmiştir. Taş işçiliği ve mimari sadeliğiyle dikkat çeker.</p>
+    </div>
+  </div>
+</div>
+
+<!-- Halep Kapalı Çarşı -->
+<div class="col">
+  <div class="heritage-card">
+    <img src="images/kapali-carsi.jpg" alt="Halep Kapalı Çarşı">
+    <div class="card-body">
+      <h5>🛒 Halep Kapalı Çarşısı</h5>
+      <p>Halep’in kalbinde yer alan bu tarihi kapalı çarşı, Ortadoğu’nun en eski ve en büyük çarşılarından biridir. Altın, gümüş, kumaş ve geleneksel kıyafetlerle dolu dükkanlarıyla ünlüdür. Ulu Cami ile Halep Kalesi arasında yer alan bu çarşı, yüzyıllardır şehrin ticaret ve zanaat merkezi olmuştur.</p>
+    </div>
+  </div>
+</div>
+
+   
+
+<!-- 🔝 زر الرجوع للأعلى -->
+<button id="scrollTopBtn" title="Yukarı çık">↑</button>
+
+<!-- ✅ Scripts -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+<script>
+  const scrollBtn = document.getElementById("scrollTopBtn");
+
+  window.onscroll = function () {
+    if (document.body.scrollTop > 300 || document.documentElement.scrollTop > 300) {
+      scrollBtn.style.display = "block";
+    } else {
+      scrollBtn.style.display = "none";
+    }
+  };
+
+  scrollBtn.onclick = function () {
+    window.scrollTo({ top: 0, behavior: "smooth" });
+  };
+</script>
+</body>
+</html>
